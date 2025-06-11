@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TWINKLE MOBILE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Twinkle Mobile, Mobile Phones Zimbabwe, Laptops, Electronics, Gadgets, Accessories, Affordable Tech, Kwekwe Phone Shop">
+    <meta name="description"
+        content="Twinkle Mobile is a trusted electronics store in Zimbabwe, offering quality and affordable mobile phones, laptops, accessories, and gadgets. Visit our shop in Kwekwe or order online for fast delivery.">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div id="top-header">
+            <div class="container">
+                <ul class="header-links pull-left">
+                    <li><a href="#"><i class="fa fa-phone"></i> 0777352002 | 0781098328 | 0773361928</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i>twinklemobil@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i>Shop A2, Miracle Mall (Ground Floor)</a></li>
+                </ul>
+                <ul class="header-links pull-right">
+                    <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                    <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="#" class="logo">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="header-search">
+                            <form>
+                                <select class="input-select">
+                                    <option value="0">All Categories</option>
+                                    <option value="store 4.html">Sound </option>
+                                    <option value="2">Electricals</option>
+                                    <option value="1">Computer </option>
+                                    <option value="2">Networking</option>
+                                    <option value="1">Cellphone </option>
+                                    <option value="2">Networking</option>
+                                    <option value="1">Stationery</option>
+                                    <option value="2">Storage</option>
+                                </select>
+                                <input class="input" placeholder="Search here">
+                                <button class="search-btn">Search</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-md-3 clearfix">
+                        <div class="header-ctn">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>Your Cart</span>
+                                    <div class="qty"></div>
+                                </a>
+
+                                <div class="cart-dropdown">
+                                    <div class="cart-list">
+                                        <!-- Cart items here -->
+                                    </div>
+                                    <div class="cart-btns">
+                                        <a href="#">View Cart</a>
+                                        <a href="#">Checkout <i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-toggle">
+                                <a href="#">
+                                    <i class="fa fa-bars"></i>
+                                    <span>Menu</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- NAVIGATION -->
+    <nav id="navigation">
+        <div class="container">
+            <div id="responsive-nav">
+                <ul class="main-nav nav navbar-nav">
+                    <li><a href="./index file/index.html">Home</a></li>
+                    <li><a href="product.html">Hot Deals</a></li>
+                    <li><a href="store 2.html">Cellphones Accessories</a></li>
+                    <li class="active"><a href="store.html">Computer Accessories</a></li>
+                    <li><a href="store 3.html">Electricals</a></li>
+                    <li><a href="store 4.html">Sounds</a></li>
+                    <li><a href="store 5.html">Stationery</a></li>
+                    <li><a href="store 6.html">Storage</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PRODUCTS SECTION (Twinkle Mobile Ecommerce Integration) -->
+    <section class="container py-5">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <label for="sort-options" class="form-label fw-bold">Sort By:</label>
+                <select id="sort-options" class="form-select">
+                    <option value="popularity">Popularity</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="category">Category</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="view-options" class="form-label fw-bold">View:</label>
+                <select id="view-options" class="form-select">
+                    <option value="grid">Grid View</option>
+                    <option value="list">List View</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row g-4" id="product-grid">
+            <!-- JavaScript renders product cards here -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-4 d-flex justify-content-center">
+            <ul class="pagination">
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="store 2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="store 3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="store 4.html">4</a></li>
+                <li class="page-item"><a class="page-link" href="store 5.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="store 6.html">6</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function createProduct(name, category, price, img) {
+            return { name, category, price, img };
+        }
+
+        const products = [
+            createProduct('Lenovo Thinkpad E14 core', 'Laptops and Computers', 350.00, './img/Laptops and Computers/LenovoThinkpadE14core$350.png'),
+            createProduct('Lenovo Thinkpad T490s core i7', 'Laptops and Computers', 350.00, './img/Laptops and Computers/LenovoThinkpadT490scorei7$350.png'),
+            createProduct('Dell Latitude 7280 core i5', 'Laptops and Computers', 320.00, './img/Laptops and Computers/Dell Latitude 7280 core i5 128GB SSD 8GB RAM 7th Gen 2.7GHz $320.jpeg')
+            // Add more products as needed...
+        ];
+
+        function renderProducts() {
+            const container = document.getElementById("product-grid");
+            container.innerHTML = "";
+            products.forEach(product => {
+                container.innerHTML += `
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="${product.img}" class="card-img-top" alt="${product.name}">
+                        <div class="card-body">
+                            <h5 class="card-title">${product.name}</h5>
+                            <p class="card-text text-muted">${product.category}</p>
+                            <p class="card-text fw-bold text-primary">$${product.price.toFixed(2)}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", renderProducts);
+    </script>
+
+
+
+    // Example for rendering products
+    console.log(products);
+
+
+    const productGrid = document.getElementById('product-grid');
+    const sortOptions = document.getElementById('sort-options');
+    const viewOptions = document.getElementById('view-options');
+
+    function renderProducts(view = 'grid') {
+    productGrid.innerHTML = '';
+    productGrid.className = view === 'grid' ? 'row' : 'list-view';
+
+    products.forEach(product => {
+    const productCard = document.createElement('div');
+    productCard.className = view === 'grid' ? 'col-md-3 col-xs-6' : 'list-item';
+
+    productCard.innerHTML = `
+    <div class="product">
+        <div class="product-img">
+            <img src="${product.img}" alt="${product.name}">
+        </div>
+        <div class="product-body">
+            <p class="product-category">${product.category}</p>
+            <h3 class="product-name"><a href="#">${product.name}</a></h3>
+            <h4 class="product-price">$${product.price.toFixed(2)}</h4>
+        </div>
+        <button class="add-to-cart-btn" data-id="${product.name}" data-price="${product.price}">
+            Add to Cart
+        </button>
+    </div>
+    `;
+    productGrid.appendChild(productCard);
+    });
+
+    // Attach event listeners for "Add to Cart"
+    const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+    addToCartBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+    const productName = e.target.getAttribute('data-id');
+    const productPrice = parseFloat(e.target.getAttribute('data-price'));
+    addToCart(productName, productPrice);
+    });
+    });
+    }
+
+
+    function sortProducts(criteria) {
+    if (criteria === 'price-low') {
+    products.sort((a, b) => a.price - b.price);
+    } else if (criteria === 'price-high') {
+    products.sort((a, b) => b.price - a.price);
+    } else if (criteria === 'popularity') {
+    products.sort(() => Math.random() - 0.5); // Mock popularity sort
+    } else if (criteria === 'category') {
+    products.sort((a, b) => a.category.localeCompare(b.category));
+    }
+    renderProducts(viewOptions.value);
+
+    }
+
+    sortOptions.addEventListener('change', (e) => sortProducts(e.target.value));
+    viewOptions.addEventListener('change', (e) => renderProducts(e.target.value));
+
+    renderProducts();
+    // Cart storage
+    let cart = [];
+
+    // Dynamic product loader
+
+
+    const cartQty = document.querySelector('.header-ctn .qty'); // Cart quantity display
+    const cartDropdownList = document.querySelector('.cart-list'); // Cart item list display
+    const cartTotal = document.querySelector('.cart-summary h5'); // Cart total price display
+
+    // Render products dynamically
+    function renderProducts(view = 'grid') {
+    productGrid.innerHTML = '';
+    productGrid.className = view === 'grid' ? 'row' : 'list-view';
+
+    products.forEach(product => {
+    const productCard = document.createElement('div');
+    productCard.className = view === 'grid' ? 'col-md-3 col-xs-6' : 'list-item';
+    productCard.innerHTML = `
+    <div class="product">
+        <div class="product-img">
+            <img src="${product.img}" alt="${product.name}">
+        </div>
+        <div class="product-body">
+            <p class="product-category">${product.category}</p>
+            <h3 class="product-name"><a href="#">${product.name}</a></h3>
+            <h4 class="product-price">$${product.price.toFixed(2)}</h4>
+            <button class="add-to-cart-btn" data-id="${product.name}" data-price="${product.price}">Add to Cart</button>
+        </div>
+    </div>
+    `;
+    productGrid.appendChild(productCard);
+    });
+
+    // Add event listeners for "Add to Cart" buttons
+    const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+    addToCartBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+    const productName = e.target.getAttribute('data-id');
+    const productPrice = parseFloat(e.target.getAttribute('data-price'));
+    addToCart(productName, productPrice);
+    });
+    });
+    }
+
+    // Add product to cart
+    function addToCart(name, price) {
+    // Check if the product is already in the cart
+    const existingProduct = cart.find(item => item.name === name);
+    if (existingProduct) {
+    existingProduct.quantity += 1;
+    } else {
+    cart.push({ name, price, quantity: 1 });
+    }
+    updateCart();
+    }
+
+    // Update the cart contents
+    function updateCart() {
+    // Update cart quantity in the header
+    cartQty.textContent = cart.length;
+
+    // Update cart items in the dropdown
+    cartDropdownList.innerHTML = '';
+    let subtotal = 0;
+    cart.forEach(item => {
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+    <div class="cart-item-info">
+        <p>${item.name} x ${item.quantity}</p>
+        <p>$${(item.price * item.quantity).toFixed(2)}</p>
+    </div>
+    `;
+    cartDropdownList.appendChild(cartItem);
+    subtotal += item.price * item.quantity;
+    });
+
+    // Update cart total
+    cartTotal.textContent = `SUBTOTAL: $${subtotal.toFixed(2)}`;
+    }
+
+    // Sort products by different criteria
+
+
+
+    function sortProducts(criteria) {
+    if (criteria === 'price-low') {
+    products.sort((a, b) => a.price - b.price);
+    } else if (criteria === 'price-high') {
+    products.sort((a, b) => b.price - a.price);
+    } else if (criteria === 'popularity') {
+    products.sort(() => Math.random() - 0.5); // Mock popularity sort
+    } else if (criteria === 'category') {
+    products.sort((a, b) => a.category.localeCompare(b.category));
+    }
+    renderProducts(viewOptions.value);
+    }
+
+    sortOptions.addEventListener('change', (e) => sortProducts(e.target.value));
+    viewOptions.addEventListener('change', (e) => renderProducts(e.target.value));
+
+    renderProducts();
+
+    </script>
+
+
+    <!-- new left page  -->
+
+
+
+
+    <!-- Chatbot begin  -->
+    <!-- Main Content --
+    <div style="margin-left: 220px;">
+        <!-- Header -->
+
+    <!-- JS Dependencies -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<div id="live-chat">
+    <div class="chat-header">
+
+        <span id="chat-toggle">
+            <h4>Need Help? Chat with us!</h4>
+        </span>
+    </div>
+    <div class="chat-body" style="display: none;">
+        <div id="chat-messages">
+            <p class="system-message">Welcome to Twinkle Mobile! How can we assist you today?</p>
+        </div>
+        <input type="text" id="chat-input" placeholder="Type your message..." />
+        <button id="send-message">Send</button>
+    </div>
+</div>
+
+<style>
+    #live-chat {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 320px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #0963e9, #649eff);
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    .chat-header {
+        background: #0769fd;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .chat-body {
+        max-height: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background: #fff;
+        color: #000;
+    }
+
+    #chat-messages {
+        flex-grow: 1;
+        overflow-y: auto;
+        margin-bottom: 10px;
+    }
+
+    .system-message {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    #chat-input {
+        flex-grow: 1;
+        border: 1px solid #ccc;
+        padding: 8px;
+        margin-right: 5px;
+        border-radius: 4px;
+    }
+
+    #send-message {
+        background: #0963e9;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #send-message:hover {
+        background: #053a7e;
+    }
+</style>
+<script>
+    const chatToggle = document.getElementById('chat-toggle');
+    const chatBody = document.querySelector('.chat-body');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatInput = document.getElementById('chat-input');
+
+    // Toggle chat visibility
+    chatToggle.addEventListener('click', () => {
+        chatBody.style.display = chatBody.style.display === 'none' ? 'block' : 'none';
+        chatToggle.textContent = chatBody.style.display === 'none' ? 'Need Help? Chat with us!' : 'Need Help? Chat with us!';
+    });
+
+    // Send a message
+    document.getElementById('send-message').addEventListener('click', () => {
+        const message = chatInput.value.trim();
+        if (message) {
+            appendMessage('user', message);
+            chatInput.value = '';
+            simulateResponse(message);
+        }
+    });
+
+    function appendMessage(sender, text) {
+        const messageElement = document.createElement('p');
+        messageElement.className = sender === 'user' ? 'user-message' : 'system-message';
+        messageElement.textContent = text;
+        chatMessages.appendChild(messageElement);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function simulateResponse(message) {
+        setTimeout(() => {
+            appendMessage('system', `We received: "${message}". A representative will assist you shortly.`);
+        }, 1000);
+
+    }
+</script>
+<!-- chatbot ends here  -->
+</body>
+
+
+
+
+
+
+<!-- footer creadit cards strts here   -->
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Your one-stop shop for the latest in tech.</p>
+            <ul>
+                <li><i class="fa fa-map-marker"></i> Shop A2, Miracle Mall (Ground Floor)</li>
+                <li><i class="fa fa-phone"></i> Phone Numbers: 0777352002 | 0781098328 | 0773361928</li>
+                <li><i class="fa fa-envelope"></i> twinklemobil@gmail.com</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+
+                <li><a href="product.html">Hot Deals</a></li>
+                <li><a href="store 2.html">Cellphones Accessories</a></li>
+                <li><a href="store.html">Computer Accessories</a></li>
+                <li><a href="store 3.html">Electricals</a></li>
+                <li><a href="store 4.html">Sounds</a></li>
+                <li><a href="store 5.html">Stationery</a></li>
+                <li><a href="store 6.html">Storage</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Payment Methods</h3>
+            <ul class="payment-icons">
+                <li><i class="fa fa-cc-visa"></i></li>
+                <li><i class="fa fa-cc-mastercard"></i></li>
+                <li><i class="fa fa-cc-paypal"></i></li>
+                <li><i class="fa fa-cc-amex"></i></li>
+                <li><i class="fa fa-cc-discover"></i></li>
+
+            </ul>
+
+            <div class="nav-social-link">
+                <a href="https://www.facebook.com/share/1DyuMSAmEP/"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/twinklemobile_official?igsh=MWFmZmhkdHVicHUwdQ=="><i
+                        class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#" class="social-icon-link bi-whatsapp"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+
+        <p>&copy;
+            <script>document.write(new Date().getFullYear());</script> Twinkle Mobile. All Rights Reserved. Designed by
+            ACCESS SOFT LABS ( ASL).
+        </p>
+    </div>
+</footer>
+
+<!-- footer creadit cards ends here  -->
+
+</html>
