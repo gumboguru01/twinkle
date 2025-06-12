@@ -536,3 +536,15 @@ h6,
         margin-bottom: -75px;
     }
 }
+
+
+
+
+.product .btn {
+    transition: background-color 0.3s ease;
+}
+
+.product .btn:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}

@@ -3,211 +3,277 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TWINKLE MOBILE</title>
+    <title>Twinkle Mobile – Affordable Electronics & Gadgets in Kwekwe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
     <meta name="keywords"
-        content="Twinkle Mobile, Mobile Phones Zimbabwe, Laptops, Electronics, Gadgets, Accessories, Affordable Tech, Kwekwe Phone Shop">
+        content="Twinkle Mobile, Mobile Phones Zimbabwe, Laptops, Electronics, Gadgets, Accessories, Tech Deals, Kwekwe Electronics Store">
     <meta name="description"
-        content="Twinkle Mobile is a trusted electronics store in Zimbabwe, offering quality and affordable mobile phones, laptops, accessories, and gadgets. Visit our shop in Kwekwe or order online for fast delivery.">
+        content="Twinkle Mobile is your one-stop shop in Kwekwe, Zimbabwe for affordable and trusted tech – from smartphones and laptops to accessories and networking equipment. Visit us or shop online.">
+    <meta name="author" content="Twinkle Mobile, powered by Access Soft Labs">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Icon Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Vendor Styles -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap & Custom Styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Tooltip Support (Optional if already included elsewhere) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/animate/animate.min.css">
+    <script src="lib/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </head>
+
 
 
 <body>
     <!-- HEADER -->
     <header>
-        <div id="top-header">
-            <div class="container">
-                <ul class="header-links pull-left">
-                    <li><a href="#"><i class="fa fa-phone"></i> 0777352002 | 0781098328 | 0773361928</a></li>
-                    <li><a href="#"><i class="fa fa-envelope-o"></i>twinklemobil@gmail.com</a></li>
-                    <li><a href="#"><i class="fa fa-map-marker"></i>Shop A2, Miracle Mall (Ground Floor)</a></li>
-                </ul>
-                <ul class="header-links pull-right">
-                    <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-                    <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-                </ul>
-            </div>
-        </div>
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Kwekwe, Zimbabwe</small>
+                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+263 78 293 9496</small>
+                        <small class="text-light"><i
+                                class="fa fa-envelope-open me-2"></i>twinklemobilezw@gmail.com</small>
 
-        <div id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="header-logo">
-                            <a href="#" class="logo">
-                                <img src="./img/logo.png" alt="">
-                            </a>
-                        </div>
                     </div>
-
-                    <div class="col-md-6">
-                        <div class="header-search">
-                            <form>
-                                <select class="input-select">
-                                    <option value="0">All Categories</option>
-                                    <option value="store 4.html">Sound </option>
-                                    <option value="2">Electricals</option>
-                                    <option value="1">Computer </option>
-                                    <option value="2">Networking</option>
-                                    <option value="1">Cellphone </option>
-                                    <option value="2">Networking</option>
-                                    <option value="1">Stationery</option>
-                                    <option value="2">Storage</option>
-                                </select>
-                                <input class="input" placeholder="Search here">
-                                <button class="search-btn">Search</button>
-                            </form>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div class="col-md-3 clearfix">
-                        <div class="header-ctn">
-                            <div class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                    <i class="fa fa-shopping-cart"></i>
-                                    <span>Your Cart</span>
-                                    <div class="qty"></div>
-                                </a>
-
-                                <div class="cart-dropdown">
-                                    <div class="cart-list">
-                                        <!-- Cart items here -->
-                                    </div>
-                                    <div class="cart-btns">
-                                        <a href="#">View Cart</a>
-                                        <a href="#">Checkout <i class="fa fa-arrow-circle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-toggle">
-                                <a href="#">
-                                    <i class="fa fa-bars"></i>
-                                    <span>Menu</span>
-                                </a>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                            href="               "><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                            href="https://www.facebook.com/share/1DyuMSAmEP/"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                            href="              "><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                            href="https://www.instagram.com/twinklemobile_official?igsh=MWFmZmhkdHVicHUwdQ=="><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="                 "><i
+                                class="fab fa-youtube fw-normal"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-white shadow-sm sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.jpg" alt="Twinkle Mobile Logo" style="height: 60px; width: auto;" class="me-2">
+                    <h2 class="m-0 text-primary">Twinkle Mobile</h2>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <!-- Search Bar (Centered for desktop) -->
+                    <form class="d-none d-lg-flex mx-auto w-50">
+                        <div class="input-group">
+                            <select class="form-select border-primary" style="max-width: 150px;">
+                                <option selected>All Categories</option>
+                                <option value="store 4.html">Sounds</option>
+                                <option value="store 3.html">Electricals</option>
+                                <option value="store.html">Computer</option>
+                                <option value="store 6.html">Networking</option>
+                                <option value="store 2.html">Cellphones</option>
+                                <option value="store 5.html">Stationery</option>
+                                <option value="store 6.html">Storage</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="Search here">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </div>
+                    </form>
+
+                    <!-- Right-side links -->
+                    <div class="navbar-nav ms-auto align-items-center">
+                        <div class="nav-item dropdown me-3">
+                            <a href="#" class="nav-link dropdown-toggle" id="cartDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-shopping-cart me-1"></i> Cart
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end p-3 shadow" aria-labelledby="cartDropdown"
+                                style="min-width: 250px;">
+                                <li>
+                                    <p class="mb-2">Your cart is currently empty.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="btn btn-sm btn-outline-primary">View Cart</a>
+                                        <a href="#" class="btn btn-sm btn-primary">Checkout</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <div class="navbar-nav ms-auto py-0">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown">Categories</a>
+                                    <div class="dropdown-menu m-0">
+                                        <a href="store.html" class="dropdown-item">Computer Accessories</a>
+                                        <a href="feature.html" class="dropdown-item">Computers & Laptops</a>
+                                        <a href="team.html" class="dropdown-item">Electricals</a>
+                                        <a href="testimonial.html" class="dropdown-item">Sounds</a>
+                                        <a href="quote.html" class="dropdown-item">Stationer</a>
+                                        <a href="storage.html" class="dropdown-item">Storage</a>
+                                        <a href="networking.html" class="dropdown-item">Networking</a>
+                                    </div>
+                                </div>
+
+
+
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal"
+                                data-bs-target="#searchModal">
+                                <i class="fa fa-search"></i>
+                            </button>
+
+                            <a href="shop.html" class="btn btn-primary py-2 px-4 ms-3">Shop Now</a>
+                        </div>
+            </nav>
+        </div>
+
+        </div>
+        </div>
+        </nav>
+        </div>
+
+
+
+        <!-- Navbar End -->
     </header>
 
 
 
-    <!-- NAVIGATION -->
-    <nav id="navigation">
-        <div class="container">
-            <div id="responsive-nav">
-                <ul class="main-nav nav navbar-nav">
-                    <li><a href="./index file/index.html">Home</a></li>
-                    <li><a href="product.html">Hot Deals</a></li>
-                    <li><a href="store 2.html">Cellphones Accessories</a></li>
-                    <li class="active"><a href="store.html">Computer Accessories</a></li>
-                    <li><a href="store 3.html">Electricals</a></li>
-                    <li><a href="store 4.html">Sounds</a></li>
-                    <li><a href="store 5.html">Stationery</a></li>
-                    <li><a href="store 6.html">Storage</a></li>
 
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- PRODUCTS SECTION (Twinkle Mobile Ecommerce Integration) -->
-    <section class="container py-5">
-        <div class="row mb-4">
-            <div class="col-md-6">
-                <label for="sort-options" class="form-label fw-bold">Sort By:</label>
-                <select id="sort-options" class="form-select">
-                    <option value="popularity">Popularity</option>
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
-                    <option value="category">Category</option>
-                </select>
-            </div>
-            <div class="col-md-6">
-                <label for="view-options" class="form-label fw-bold">View:</label>
-                <select id="view-options" class="form-select">
-                    <option value="grid">Grid View</option>
-                    <option value="list">List View</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="row g-4" id="product-grid">
-            <!-- JavaScript renders product cards here -->
-        </div>
-
-        <!-- Pagination -->
-        <div class="mt-4 d-flex justify-content-center">
-            <ul class="pagination">
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="store 2.html">2</a></li>
-                <li class="page-item"><a class="page-link" href="store 3.html">3</a></li>
-                <li class="page-item"><a class="page-link" href="store 4.html">4</a></li>
-                <li class="page-item"><a class="page-link" href="store 5.html">5</a></li>
-                <li class="page-item"><a class="page-link" href="store 6.html">6</a></li>
-            </ul>
-        </div>
-    </section>
+    <!-- Products Grid Container -->
+    <div class="row g-4" id="product-grid"></div>
 
     <script>
-        function createProduct(name, category, price, img) {
-            return { name, category, price, img };
+        // Product constructor with description
+        function createProduct(name, category, price, img, description) {
+            return { name, category, price, img, description };
         }
 
+        // Product list with tooltips (descriptions/specs)
         const products = [
-            createProduct('Lenovo Thinkpad E14 core', 'Laptops and Computers', 350.00, './img/Laptops and Computers/LenovoThinkpadE14core$350.png'),
-            createProduct('Lenovo Thinkpad T490s core i7', 'Laptops and Computers', 350.00, './img/Laptops and Computers/LenovoThinkpadT490scorei7$350.png'),
-            createProduct('Dell Latitude 7280 core i5', 'Laptops and Computers', 320.00, './img/Laptops and Computers/Dell Latitude 7280 core i5 128GB SSD 8GB RAM 7th Gen 2.7GHz $320.jpeg')
-            // Add more products as needed...
+            createProduct('Cable HDMI 20M', 'Computer Accessories', 0.00, './img/Computer Accessories/Cable HDMI 20M.png', 'High-speed HDMI cable for long-distance connections (20 meters)'),
+            createProduct('Mouse Wireless Super SE-M03', 'Computer Accessories', 0.00, './img/Computer Accessories/Mouse Wireless Super SE-M03.png', 'Wireless optical mouse with ergonomic design - SE-M03'),
+            createProduct('Mouse Wireless Super SE-M17', 'Computer Accessories', 0.00, './img/Computer Accessories/Mouse Wireless Super SE-M17.png', 'Compact wireless mouse for everyday use - SE-M17'),
+            createProduct('Mouse Wireless Super SE-M18', 'Computer Accessories', 0.00, './img/Computer Accessories/Mouse Wireless Super SE-M18.png', 'Sleek and responsive wireless mouse - SE-M18'),
+            createProduct('Cable HDTV 3 in 1', 'Computer Accessories', 0.00, './img/Computer Accessories/Cable HDTV 3 in 1.png', 'Multi-port HDTV cable supporting multiple outputs'),
+            createProduct('Cable UPS', 'Computer Accessories', 0.00, './img/Computer Accessories/Cable UPS.png', 'Power backup cable for UPS systems'),
+            createProduct('Macbook Magsafe P/Pack XF-0056', 'Computer Accessories', 0.00, './img/Computer Accessories/Macbook Magsafe P-Pack XF-0056.png', 'Replacement Magsafe power pack for MacBook'),
+            createProduct('LCD Cleaning Kit', 'Computer Accessories', 0.00, './img/Computer Accessories/LCD Cleaning Kit.png', 'Kit for safely cleaning LCD screens and laptops'),
+            createProduct('Laptop Bag Satchel J6-20375373', 'Computer Accessories', 0.00, './img/Computer Accessories/Laptop Bag Satchel J6-20375373.png', 'Stylish satchel-style laptop bag with extra pockets'),
+            createProduct('Laptop Bag Sling XF-0765', 'Computer Accessories', 0.00, './img/Computer Accessories/Laptop Bag Sling XF-0765.png', 'Comfortable sling bag for laptops - model XF-0765'),
+            createProduct('HDMI to Ethernet Adapter', 'Computer Accessories', 0.00, './img/Computer Accessories/HDMI to Ethernet Adapter.png', 'Adapter for converting HDMI signal to Ethernet'),
+            createProduct('HDTV Mini to VGA Adapter', 'Computer Accessories', 0.00, './img/Computer Accessories/HDTV Mini to VGA Adapter.png', 'Mini HDTV to VGA video converter'),
+            createProduct('USB V3 Cable SE-L108', 'Computer Accessories', 0.00, './img/Computer Accessories/USB V3 Cable SE-L108.png', 'High-speed USB V3.0 cable - model SE-L108'),
+            createProduct('Laptop Bag Sling XF-0766', 'Computer Accessories', 0.00, './img/Computer Accessories/Laptop Bag Sling XF-0766.png', 'Compact laptop sling bag - XF-0766'),
+            createProduct('Gamepad Wireless USB Twin', 'Computer Accessories', 0.00, './img/Computer Accessories/Gamepad Wireless USB Twin.png', 'Twin pack of wireless USB gamepads'),
+            createProduct('Type C to HDMI 3 in 1 SE-C16', 'Computer Accessories', 0.00, './img/Computer Accessories/Type C to HDMI 3 in 1 SE-C16.png', '3-in-1 Type-C to HDMI adapter'),
+            createProduct('Macbook Magsafe P/Pack XF-0057', 'Computer Accessories', 0.00, './img/Computer Accessories/Macbook Magsafe P-Pack XF-0057.png', 'Backup power adapter for MacBook - XF-0057'),
+            createProduct('Mouse Aerbes Wireless AB-D324', 'Computer Accessories', 0.00, './img/Computer Accessories/Mouse Aerbes Wireless AB-D324.png', 'Wireless mouse by Aerbes - AB-D324 model'),
+            createProduct('Mouse HP Gaming M100', 'Computer Accessories', 0.00, './img/Computer Accessories/Mouse HP Gaming M100.png', 'High-performance gaming mouse from HP'),
+            createProduct('Laptop Adapter Acer Small Pin', 'Computer Accessories', 0.00, './img/Computer Accessories/Laptop Adapter Acer Small Pin.png', 'AC adapter for Acer laptops (small pin)'),
+            createProduct('Converter HDMI to VGA HD-551', 'Computer Accessories', 0.00, './img/Computer Accessories/Converter HDMI to VGA HD-551.png', 'HDMI to VGA converter - HD-551'),
+            createProduct('Parallel Cable XF-0184', 'Computer Accessories', 0.00, './img/Computer Accessories/Parallel Cable XF-0184.png', 'Parallel printer or device cable - XF-0184'),
+            createProduct('Mouse LA-52', 'Computer Accessories', 0.00, './img/Computer Accessories/Mouse LA-52.png', 'Standard optical mouse - model LA-52'),
+            createProduct('Keyboard Zerodate LD-B01', 'Computer Accessories', 0.00, './img/Computer Accessories/Keyboard Zerodate LD-B01.png', 'Zerodate wired keyboard - LD-B01'),
+            createProduct('Converter HDMI to AV', 'Computer Accessories', 0.00, './img/Computer Accessories/Converter HDMI to AV.png', 'Convert HDMI signal to AV (composite video)'),
+            createProduct('Cable HDMI to HDMI Mini', 'Computer Accessories', 0.00, './img/Computer Accessories/Cable HDMI to HDMI Mini.png', 'HDMI to Mini HDMI cable for portable devices'),
+            createProduct('Type C to DP Female SE-LT24', 'Computer Accessories', 0.00, './img/Computer Accessories/Type C to DP Female SE-LT24.png', 'Type-C to DisplayPort (female) converter'),
+            createProduct('Web Camera Super HD 720P', 'Computer Accessories', 0.00, './img/Computer Accessories/Web Camera Super HD 720P.png', 'HD 720p webcam for video conferencing'),
+            createProduct('Converter VGA to AV', 'Computer Accessories', 0.00, './img/Computer Accessories/Converter VGA to AV.png', 'Convert VGA signal to AV video'),
+            createProduct('Adapter HP Yellow Tip', 'Computer Accessories', 0.00, './img/Computer Accessories/Adapter HP Yellow Tip.png', 'HP power adapter with yellow tip connector'),
+            createProduct('Adapter Lenovo C Type', 'Computer Accessories', 0.00, './img/Computer Accessories/Adapter Lenovo C Type.png', 'Lenovo USB-C charging adapter'),
+            createProduct('Cable LAN 5M', 'Computer Accessories', 0.00, './img/Computer Accessories/Cable LAN 5M.png', '5 meter LAN (Ethernet) cable'),
+            createProduct('Adapter C to HDMI FM SE-LT25', 'Computer Accessories', 0.00, './img/Computer Accessories/Adapter C to HDMI FM SE-LT25.png', 'USB-C to HDMI (female) adapter - SE-LT25'),
+            createProduct('Cable USB Printer 5M', 'Computer Accessories', 0.00, './img/Computer Accessories/Cable USB Printer 5M.png', 'USB printer cable - 5 meter length'),
+            createProduct('Converter AV to VGA', 'Computer Accessories', 0.00, './img/Computer Accessories/Converter AV to VGA.png', 'AV to VGA signal converter'),
+            createProduct('Mouse Wireless Aerbes AB-D333', 'Computer Accessories', 0.00, './img/Computer Accessories/Mouse Wireless Aerbes AB-D333.png', 'Ergonomic wireless mouse by Aerbes'),
+            createProduct('Adapter Universal', 'Computer Accessories', 0.00, './img/Computer Accessories/Adapter Universal.png', 'Multi-tip universal power adapter'),
+            createProduct('Adapter USB to HDMI SE-L130', 'Computer Accessories', 0.00, './img/Computer Accessories/Adapter USB to HDMI SE-L130.png', 'USB to HDMI converter - model SE-L130'),
+            createProduct('Gas Air Duster', 'Computer Accessories', 0.00, './img/Computer Accessories/Gas Air Duster.png', 'Compressed air can for electronics cleaning'),
+            createProduct('Data Cable Sony Super SE-C07', 'Computer Accessories', 0.00, './img/Computer Accessories/Data Cable Sony Super SE-C07.png', 'Sony data transfer cable - SE-C07'),
+            createProduct('Power Cable Desktop Round', 'Computer Accessories', 0.00, './img/Computer Accessories/Power Cable Desktop Round.png', 'Standard round desktop power cable'),
+            createProduct('Type C/USB HUB 3.0 Transmission', 'Computer Accessories', 0.00, './img/Computer Accessories/Type C-USB HUB 3.0 Transmission.png', 'USB 3.0 HUB with Type-C input'),
+            createProduct('USB Adapter Bluetooth Kevin', 'Computer Accessories', 0.00, './img/Computer Accessories/USB Adapter Bluetooth Kevin.png', 'Bluetooth USB dongle - Kevin series'),
+            createProduct('USB to VGA Adapter', 'Computer Accessories', 0.00, './img/Computer Accessories/USB to VGA Adapter.png', 'Convert USB to VGA for display output'),
+            createProduct('Hub Aerbes 7 Port AB-C228', 'Computer Accessories', 0.00, './img/Computer Accessories/Hub Aerbes 7 Port AB-C228.png', '7-port USB hub by Aerbes'),
+            createProduct('USB Adapter WIFI', 'Computer Accessories', 0.00, './img/Computer Accessories/USB Adapter WIFI.png', 'Wireless USB WiFi adapter'),
+            createProduct('Laptop Stand Ananas AS-50477', 'Computer Accessories', 0.00, './img/Computer Accessories/Laptop Stand Ananas AS-50477.png', 'Adjustable laptop stand - model AS-50477')
         ];
+
 
         function renderProducts() {
             const container = document.getElementById("product-grid");
             container.innerHTML = "";
-            products.forEach(product => {
+            products.forEach((product, index) => {
                 container.innerHTML += `
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="${product.img}" class="card-img-top" alt="${product.name}">
-                        <div class="card-body">
-                            <h5 class="card-title">${product.name}</h5>
-                            <p class="card-text text-muted">${product.category}</p>
-                            <p class="card-text fw-bold text-primary">$${product.price.toFixed(2)}</p>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="${index * 0.1}s">
+                    <div class="bg-light rounded h-100 p-3 text-center shadow-sm border">
+                        <div class="mb-2">
+                            <img src="${product.img}" alt="${product.name}" class="img-fluid rounded"
+                                style="max-height: 180px; object-fit: contain;"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="${product.description}">
                         </div>
+                        <p class="small text-muted mb-1">${product.category}</p>
+                        <h6 class="fw-semibold" data-bs-toggle="tooltip" data-bs-placement="top" title="${product.description}">
+                            ${product.name}
+                        </h6>
+                        <h5 class="text-primary mb-3">$${product.price.toFixed(2)}</h5>
+                        <button class="btn btn-sm btn-outline-primary w-100 add-to-cart-btn"
+                            data-id="${product.name}" data-price="${product.price}">
+                            <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                        </button>
                     </div>
                 </div>
             `;
+            });
+
+            // Activate tooltips (Bootstrap 5)
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.forEach(el => {
+                new bootstrap.Tooltip(el);
             });
         }
 
@@ -215,389 +281,134 @@
     </script>
 
 
-
-    // Example for rendering products
-    console.log(products);
-
-
-    const productGrid = document.getElementById('product-grid');
-    const sortOptions = document.getElementById('sort-options');
-    const viewOptions = document.getElementById('view-options');
-
-    function renderProducts(view = 'grid') {
-    productGrid.innerHTML = '';
-    productGrid.className = view === 'grid' ? 'row' : 'list-view';
-
-    products.forEach(product => {
-    const productCard = document.createElement('div');
-    productCard.className = view === 'grid' ? 'col-md-3 col-xs-6' : 'list-item';
-
-    productCard.innerHTML = `
-    <div class="product">
-        <div class="product-img">
-            <img src="${product.img}" alt="${product.name}">
-        </div>
-        <div class="product-body">
-            <p class="product-category">${product.category}</p>
-            <h3 class="product-name"><a href="#">${product.name}</a></h3>
-            <h4 class="product-price">$${product.price.toFixed(2)}</h4>
-        </div>
-        <button class="add-to-cart-btn" data-id="${product.name}" data-price="${product.price}">
-            Add to Cart
-        </button>
-    </div>
-    `;
-    productGrid.appendChild(productCard);
-    });
-
-    // Attach event listeners for "Add to Cart"
-    const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
-    addToCartBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-    const productName = e.target.getAttribute('data-id');
-    const productPrice = parseFloat(e.target.getAttribute('data-price'));
-    addToCart(productName, productPrice);
-    });
-    });
-    }
-
-
-    function sortProducts(criteria) {
-    if (criteria === 'price-low') {
-    products.sort((a, b) => a.price - b.price);
-    } else if (criteria === 'price-high') {
-    products.sort((a, b) => b.price - a.price);
-    } else if (criteria === 'popularity') {
-    products.sort(() => Math.random() - 0.5); // Mock popularity sort
-    } else if (criteria === 'category') {
-    products.sort((a, b) => a.category.localeCompare(b.category));
-    }
-    renderProducts(viewOptions.value);
-
-    }
-
-    sortOptions.addEventListener('change', (e) => sortProducts(e.target.value));
-    viewOptions.addEventListener('change', (e) => renderProducts(e.target.value));
-
-    renderProducts();
-    // Cart storage
-    let cart = [];
-
-    // Dynamic product loader
-
-
-    const cartQty = document.querySelector('.header-ctn .qty'); // Cart quantity display
-    const cartDropdownList = document.querySelector('.cart-list'); // Cart item list display
-    const cartTotal = document.querySelector('.cart-summary h5'); // Cart total price display
-
-    // Render products dynamically
-    function renderProducts(view = 'grid') {
-    productGrid.innerHTML = '';
-    productGrid.className = view === 'grid' ? 'row' : 'list-view';
-
-    products.forEach(product => {
-    const productCard = document.createElement('div');
-    productCard.className = view === 'grid' ? 'col-md-3 col-xs-6' : 'list-item';
-    productCard.innerHTML = `
-    <div class="product">
-        <div class="product-img">
-            <img src="${product.img}" alt="${product.name}">
-        </div>
-        <div class="product-body">
-            <p class="product-category">${product.category}</p>
-            <h3 class="product-name"><a href="#">${product.name}</a></h3>
-            <h4 class="product-price">$${product.price.toFixed(2)}</h4>
-            <button class="add-to-cart-btn" data-id="${product.name}" data-price="${product.price}">Add to Cart</button>
-        </div>
-    </div>
-    `;
-    productGrid.appendChild(productCard);
-    });
-
-    // Add event listeners for "Add to Cart" buttons
-    const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
-    addToCartBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-    const productName = e.target.getAttribute('data-id');
-    const productPrice = parseFloat(e.target.getAttribute('data-price'));
-    addToCart(productName, productPrice);
-    });
-    });
-    }
-
-    // Add product to cart
-    function addToCart(name, price) {
-    // Check if the product is already in the cart
-    const existingProduct = cart.find(item => item.name === name);
-    if (existingProduct) {
-    existingProduct.quantity += 1;
-    } else {
-    cart.push({ name, price, quantity: 1 });
-    }
-    updateCart();
-    }
-
-    // Update the cart contents
-    function updateCart() {
-    // Update cart quantity in the header
-    cartQty.textContent = cart.length;
-
-    // Update cart items in the dropdown
-    cartDropdownList.innerHTML = '';
-    let subtotal = 0;
-    cart.forEach(item => {
-    const cartItem = document.createElement('div');
-    cartItem.classList.add('cart-item');
-    cartItem.innerHTML = `
-    <div class="cart-item-info">
-        <p>${item.name} x ${item.quantity}</p>
-        <p>$${(item.price * item.quantity).toFixed(2)}</p>
-    </div>
-    `;
-    cartDropdownList.appendChild(cartItem);
-    subtotal += item.price * item.quantity;
-    });
-
-    // Update cart total
-    cartTotal.textContent = `SUBTOTAL: $${subtotal.toFixed(2)}`;
-    }
-
-    // Sort products by different criteria
-
-
-
-    function sortProducts(criteria) {
-    if (criteria === 'price-low') {
-    products.sort((a, b) => a.price - b.price);
-    } else if (criteria === 'price-high') {
-    products.sort((a, b) => b.price - a.price);
-    } else if (criteria === 'popularity') {
-    products.sort(() => Math.random() - 0.5); // Mock popularity sort
-    } else if (criteria === 'category') {
-    products.sort((a, b) => a.category.localeCompare(b.category));
-    }
-    renderProducts(viewOptions.value);
-    }
-
-    sortOptions.addEventListener('change', (e) => sortProducts(e.target.value));
-    viewOptions.addEventListener('change', (e) => renderProducts(e.target.value));
-
-    renderProducts();
-
-    </script>
-
-
-    <!-- new left page  -->
-
-
-
-
-    <!-- Chatbot begin  -->
-    <!-- Main Content --
-    <div style="margin-left: 220px;">
-        <!-- Header -->
-
-    <!-- JS Dependencies -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 </body>
 
-</html>
-<div id="live-chat">
-    <div class="chat-header">
 
-        <span id="chat-toggle">
-            <h4>Need Help? Chat with us!</h4>
-        </span>
-    </div>
-    <div class="chat-body" style="display: none;">
-        <div id="chat-messages">
-            <p class="system-message">Welcome to Twinkle Mobile! How can we assist you today?</p>
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <!-- Brand + Newsletter -->
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div
+                    class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-white d-flex align-items-center">
+                            <img src="img/logo2.jpg" alt="Twinkle Mobile Logo" style="height: 80px; margin-right: 8px;">
+                            Twinkle Mobile
+                        </h1>
+                    </a>
+                    <p class="mt-3 mb-4">
+                        Your trusted source for electronics and gadgets. Two locations in Kwekwe. Serving Zimbabwe since
+                        2020.
+                    </p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control border-white p-3" placeholder="Your Email" required>
+                            <button class="btn btn-dark">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <!-- Contact -->
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Get In Touch</h3>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>
+                            <p class="mb-0">Shop A2 Miracle Mall & Shop 19 Tauro Tragus Centre, Kwekwe</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <p class="mb-0">twinklemobil@gmail.com</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0">0777352002 | 0781098328 | 0773361928</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-square me-2"
+                                href="https://www.facebook.com/share/1DyuMSAmEP/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square"
+                                href="https://www.instagram.com/twinklemobile_official?igsh=MWFmZmhkdHVicHUwdQ=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Quick Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="index.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                            <a class="text-light mb-2" href="about.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>About</a>
+                            <a class="text-light mb-2" href="shop.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Shop</a>
+                            <a class="text-light mb-2" href="blog.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                            <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Track
+                                Order</a>
+                            <a class="text-light" href="contact.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Our Categories</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="#"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Cellphones & Accessories</a>
+                            <a class="text-light mb-2" href="#"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Computers & Laptops</a>
+                            <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Sound
+                                Systems</a>
+                            <a class="text-light mb-2" href="#"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Stationery</a>
+                            <a class="text-light mb-2" href="#"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Electricals</a>
+                            <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Storage
+                                Devices</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <input type="text" id="chat-input" placeholder="Type your message..." />
-        <button id="send-message">Send</button>
     </div>
 </div>
 
-<style>
-    #live-chat {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 320px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        background: linear-gradient(135deg, #0963e9, #649eff);
-        font-family: 'Montserrat', sans-serif;
-        color: #fff;
-        overflow: hidden;
-    }
-
-    .chat-header {
-        background: #0769fd;
-        padding: 10px;
-        border-radius: 10px 10px 0 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .chat-body {
-        max-height: 350px;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background: #fff;
-        color: #000;
-    }
-
-    #chat-messages {
-        flex-grow: 1;
-        overflow-y: auto;
-        margin-bottom: 10px;
-    }
-
-    .system-message {
-        font-size: 14px;
-        color: #666;
-        margin-bottom: 10px;
-    }
-
-    #chat-input {
-        flex-grow: 1;
-        border: 1px solid #ccc;
-        padding: 8px;
-        margin-right: 5px;
-        border-radius: 4px;
-    }
-
-    #send-message {
-        background: #0963e9;
-        color: #fff;
-        border: none;
-        padding: 8px 12px;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    #send-message:hover {
-        background: #053a7e;
-    }
-</style>
-<script>
-    const chatToggle = document.getElementById('chat-toggle');
-    const chatBody = document.querySelector('.chat-body');
-    const chatMessages = document.getElementById('chat-messages');
-    const chatInput = document.getElementById('chat-input');
-
-    // Toggle chat visibility
-    chatToggle.addEventListener('click', () => {
-        chatBody.style.display = chatBody.style.display === 'none' ? 'block' : 'none';
-        chatToggle.textContent = chatBody.style.display === 'none' ? 'Need Help? Chat with us!' : 'Need Help? Chat with us!';
-    });
-
-    // Send a message
-    document.getElementById('send-message').addEventListener('click', () => {
-        const message = chatInput.value.trim();
-        if (message) {
-            appendMessage('user', message);
-            chatInput.value = '';
-            simulateResponse(message);
-        }
-    });
-
-    function appendMessage(sender, text) {
-        const messageElement = document.createElement('p');
-        messageElement.className = sender === 'user' ? 'user-message' : 'system-message';
-        messageElement.textContent = text;
-        chatMessages.appendChild(messageElement);
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
-
-    function simulateResponse(message) {
-        setTimeout(() => {
-            appendMessage('system', `We received: "${message}". A representative will assist you shortly.`);
-        }, 1000);
-
-    }
-</script>
-<!-- chatbot ends here  -->
-</body>
-
-
-
-
-
-
-<!-- footer creadit cards strts here   -->
-<footer id="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>About Us</h3>
-            <p>Your one-stop shop for the latest in tech.</p>
-            <ul>
-                <li><i class="fa fa-map-marker"></i> Shop A2, Miracle Mall (Ground Floor)</li>
-                <li><i class="fa fa-phone"></i> Phone Numbers: 0777352002 | 0781098328 | 0773361928</li>
-                <li><i class="fa fa-envelope"></i> twinklemobil@gmail.com</li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Categories</h3>
-            <ul>
-
-                <li><a href="product.html">Hot Deals</a></li>
-                <li><a href="store 2.html">Cellphones Accessories</a></li>
-                <li><a href="store.html">Computer Accessories</a></li>
-                <li><a href="store 3.html">Electricals</a></li>
-                <li><a href="store 4.html">Sounds</a></li>
-                <li><a href="store 5.html">Stationery</a></li>
-                <li><a href="store 6.html">Storage</a></li>
-
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Customer Service</h3>
-            <ul>
-                <li><a href="#">My Account</a></li>
-                <li><a href="#">Track My Order</a></li>
-                <li><a href="#">Returns</a></li>
-                <li><a href="#">Help Center</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Payment Methods</h3>
-            <ul class="payment-icons">
-                <li><i class="fa fa-cc-visa"></i></li>
-                <li><i class="fa fa-cc-mastercard"></i></li>
-                <li><i class="fa fa-cc-paypal"></i></li>
-                <li><i class="fa fa-cc-amex"></i></li>
-                <li><i class="fa fa-cc-discover"></i></li>
-
-            </ul>
-
-            <div class="nav-social-link">
-                <a href="https://www.facebook.com/share/1DyuMSAmEP/"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.instagram.com/twinklemobile_official?igsh=MWFmZmhkdHVicHUwdQ=="><i
-                        class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-pinterest"></i></a>
-                <a href="#" class="social-icon-link bi-whatsapp"></a>
+<!-- Footer Bottom -->
+<div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                    <p class="mb-0">
+                        &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+                        <a class="text-white border-bottom" href="#">Twinkle Mobile</a>. All Rights Reserved.
+                        Designed by <a class="text-white border-bottom" href="#">Access Soft Labs</a>
+                    </p>
+                </div>
             </div>
         </div>
-
     </div>
-    <div class="footer-bottom">
-
-        <p>&copy;
-            <script>document.write(new Date().getFullYear());</script> Twinkle Mobile. All Rights Reserved. Designed by
-            ACCESS SOFT LABS ( ASL).
-        </p>
-    </div>
-</footer>
-
-<!-- footer creadit cards ends here  -->
+</div>
+<!-- Footer End -->
 
 </html>
