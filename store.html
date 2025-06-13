@@ -123,7 +123,14 @@
                         <div class="nav-item dropdown me-3">
                             <a href="#" class="nav-link dropdown-toggle" id="cartDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-shopping-cart me-1"></i> Cart
+                                <i class="fa fa-shopping-cart me-1 position-relative">
+                                    <span id="cart-count"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                        style="font-size: 0.6rem; display: none;">
+                                        0
+                                    </span>
+                                </i> Cart
+
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end p-3 shadow" aria-labelledby="cartDropdown"
                                 style="min-width: 250px;">
@@ -160,10 +167,7 @@
 
                                 <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
-                            <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal"
-                                data-bs-target="#searchModal">
-                                <i class="fa fa-search"></i>
-                            </button>
+
 
                             <a href="shop.html" class="btn btn-primary py-2 px-4 ms-3">Shop Now</a>
                         </div>
@@ -275,10 +279,151 @@
             tooltipTriggerList.forEach(el => {
                 new bootstrap.Tooltip(el);
             });
+
         }
+
 
         document.addEventListener("DOMContentLoaded", renderProducts);
     </script>
+    <script>
+        let cart = {};
+
+        function updateCartCount() {
+            const countEl = document.getElementById("cart-count");
+            const totalItems = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
+
+            if (totalItems > 0) {
+                countEl.textContent = totalItems;
+                countEl.style.display = 'inline-block';
+            } else {
+                countEl.style.display = 'none';
+            }
+        }
+
+        function updateCartDropdown() {
+            const dropdown = document.querySelector("#cartDropdown + .dropdown-menu");
+            dropdown.innerHTML = '';
+
+            const items = Object.entries(cart);
+            if (items.length === 0) {
+                dropdown.innerHTML = '<li><p class="mb-2">Your cart is currently empty.</p></li>';
+            } else {
+                items.forEach(([id, item]) => {
+                    dropdown.innerHTML += `
+                    <li class="mb-2">
+                        <div class="d-flex justify-content-between">
+                            <span>${item.name} (x${item.quantity})</span>
+                            <span>$${(item.price * item.quantity).toFixed(2)}</span>
+                        </div>
+                    </li>
+                `;
+                });
+
+                const total = items.reduce((sum, [_, item]) => sum + item.price * item.quantity, 0);
+                dropdown.innerHTML += `
+                <li class="border-top pt-2">
+                    <div class="d-flex justify-content-between fw-bold">
+                        <span>Total:</span>
+                        <span>$${total.toFixed(2)}</span>
+                    </div>
+                </li>
+                <li class="mt-2 d-flex justify-content-between">
+                    <a href="#" class="btn btn-sm btn-outline-primary">View Cart</a>
+                    <a href="#" class="btn btn-sm btn-primary">Checkout</a>
+                </li>
+            `;
+            }
+
+            updateCartCount(); // Always update badge
+        }
+
+        function addToCart(productName, price) {
+            if (!cart[productName]) {
+                cart[productName] = {
+                    name: productName,
+                    price: price,
+                    quantity: 1
+                };
+            } else {
+                cart[productName].quantity += 1;
+            }
+
+            updateCartDropdown();
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            renderProducts(); // Already defined earlier
+
+            document.addEventListener("click", function (e) {
+                if (e.target.closest(".add-to-cart-btn")) {
+                    const btn = e.target.closest(".add-to-cart-btn");
+                    const name = btn.dataset.id;
+                    const price = parseFloat(btn.dataset.price);
+                    addToCart(name, price);
+                }
+            });
+
+            updateCartDropdown(); // Ensure cart is synced at page load
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchForm = document.querySelector("form.d-none.d-lg-flex");
+            const searchInput = searchForm.querySelector("input[type='text']");
+
+            searchForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const query = searchInput.value.trim().toLowerCase();
+
+                const filtered = products.filter(product =>
+                    product.name.toLowerCase().includes(query) ||
+                    product.description.toLowerCase().includes(query) ||
+                    product.category.toLowerCase().includes(query)
+                );
+
+                renderFilteredProducts(filtered);
+            });
+
+            function renderFilteredProducts(filteredProducts) {
+                const container = document.getElementById("product-grid");
+                container.innerHTML = "";
+
+                if (filteredProducts.length === 0) {
+                    container.innerHTML = `<div class="col-12 text-center"><p class="text-muted">No products found.</p></div>`;
+                    return;
+                }
+
+                filteredProducts.forEach((product, index) => {
+                    container.innerHTML += `
+                    <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="${index * 0.1}s">
+                        <div class="bg-light rounded h-100 p-3 text-center shadow-sm border">
+                            <div class="mb-2">
+                                <img src="${product.img}" alt="${product.name}" class="img-fluid rounded"
+                                    style="max-height: 180px; object-fit: contain;"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="${product.description}">
+                            </div>
+                            <p class="small text-muted mb-1">${product.category}</p>
+                            <h6 class="fw-semibold" data-bs-toggle="tooltip" data-bs-placement="top" title="${product.description}">
+                                ${product.name}
+                            </h6>
+                            <h5 class="text-primary mb-3">$${product.price.toFixed(2)}</h5>
+                            <button class="btn btn-sm btn-outline-primary w-100 add-to-cart-btn"
+                                data-id="${product.name}" data-price="${product.price}">
+                                <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                `;
+                });
+
+                // Re-activate tooltips for filtered products
+                const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+            }
+        });
+    </script>
+
 
 
 </body>
