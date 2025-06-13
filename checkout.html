@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout – Twinkle Mobile</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container py-5">
+    <h1 class="mb-4">Checkout</h1>
+    <form id="checkout-form">
+        <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input required type="text" id="name" class="form-control" placeholder="Your name">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input required type="tel" id="phone" class="form-control" placeholder="e.g. 0771234567">
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Delivery Address</label>
+            <textarea required id="address" class="form-control" rows="3"
+                placeholder="Where should we deliver?"></textarea>
+        </div>
+        <div class="mb-4">
+            <h4>Total: <span id="checkout-total">$0.00</span></h4>
+        </div>
+        <button type="submit" class="btn btn-success">Submit Order</button>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cart = JSON.parse(localStorage.getItem('cart')) || {};
+            let total = 0;
+
+            for (const key in cart) {
+                const item = cart[key];
+                total += item.price * item.quantity;
+            }
+
+            document.getElementById("checkout-total").textContent = "$" + total.toFixed(2);
+
+            document.getElementById("checkout-form").addEventListener("submit", function (e) {
+                e.preventDefault();
+                alert("Order submitted successfully! Thank you.");
+                localStorage.removeItem('cart');
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

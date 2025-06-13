@@ -188,53 +188,31 @@
 
         // Product list with tooltips (descriptions/specs)
         const products = [
-            createProduct('Cable HDMI 20M', 'Computer Accessories', 45.00, './img/Computer Accessories/Cable HDMI 20M.png', 'High-speed HDMI cable for long-distance connections (20 meters)'),
-            createProduct('Mouse Wireless Super SE-M03', 'Computer Accessories', 10.00, './img/Computer Accessories/Mouse Wireless Super SE-M03.png', 'Wireless optical mouse with ergonomic design - SE-M03'),
-            createProduct('Mouse Wireless Super SE-M17', 'Computer Accessories', 15.00, './img/Computer Accessories/Mouse Wireless Super SE-M17.png', 'Compact wireless mouse for everyday use - SE-M17'),
-            createProduct('Mouse Wireless Super SE-M18', 'Computer Accessories', 10.00, './img/Computer Accessories/Mouse Wireless Super SE-M18.png', 'Sleek and responsive wireless mouse - SE-M18'),
-            createProduct('Cable HDTV 3 in 1', 'Computer Accessories', 8.00, './img/Computer Accessories/Cable HDTV 3 in 1.png', 'Multi-port HDTV cable supporting multiple outputs'),
-            createProduct('Cable UPS', 'Computer Accessories', 0.00, './img/Computer Accessories/Cable UPS.png', 'Power backup cable for UPS systems'),
-            createProduct('Macbook Magsafe P/Pack XF-0056', 'Computer Accessories', 35.00, './img/Computer Accessories/Macbook Magsafe P-Pack XF-0056.png', 'Replacement Magsafe power pack for MacBook'),
-            createProduct('LCD Cleaning Kit', 'Computer Accessories', 5.00, './img/Computer Accessories/LCD Cleaning Kit.png', 'Kit for safely cleaning LCD screens and laptops'),
-            createProduct('Laptop Bag Satchel J6-20375373', 'Computer Accessories', 45.00, './img/Computer Accessories/Laptop Bag Satchel J6-20375373.png', 'Stylish satchel-style laptop bag with extra pockets'),
-            createProduct('Laptop Bag Sling XF-0765', 'Computer Accessories', 30.00, './img/Computer Accessories/Laptop Bag Sling XF-0765.png', 'Comfortable sling bag for laptops - model XF-0765'),
-            createProduct('HDMI to Ethernet Adapter', 'Computer Accessories', 5.00, './img/Computer Accessories/HDMI to Ethernet Adapter.png', 'Adapter for converting HDMI signal to Ethernet'),
-            createProduct('HDTV Mini to VGA Adapter', 'Computer Accessories', 10.00, './img/Computer Accessories/HDTV Mini to VGA Adapter.png', 'Mini HDTV to VGA video converter'),
-            createProduct('USB V3 Cable SE-L108', 'Computer Accessories', 0.00, './img/Computer Accessories/USB V3 Cable SE-L108.png', 'High-speed USB V3.0 cable - model SE-L108'),
-            createProduct('Laptop Bag Sling XF-0766', 'Computer Accessories', 35.00, './img/Computer Accessories/Laptop Bag Sling XF-0766.png', 'Compact laptop sling bag - XF-0766'),
-            createProduct('Gamepad Wireless USB Twin', 'Computer Accessories', 0.00, './img/Computer Accessories/Gamepad Wireless USB Twin.png', 'Twin pack of wireless USB gamepads'),
-            createProduct('Type C to HDMI 3 in 1 SE-C16', 'Computer Accessories', 15.00, './img/Computer Accessories/Type C to HDMI 3 in 1 SE-C16.png', '3-in-1 Type-C to HDMI adapter'),
-            createProduct('Macbook Magsafe P/Pack XF-0057', 'Computer Accessories', 0.00, './img/Computer Accessories/Macbook Magsafe P-Pack XF-0057.png', 'Backup power adapter for MacBook - XF-0057'),
-            createProduct('Mouse Aerbes Wireless AB-D324', 'Computer Accessories', 10.00, './img/Computer Accessories/Mouse Aerbes Wireless AB-D324.png', 'Wireless mouse by Aerbes - AB-D324 model'),
-            createProduct('Mouse HP Gaming M100', 'Computer Accessories', 8.00, './img/Computer Accessories/Mouse HP Gaming M100.png', 'High-performance gaming mouse from HP'),
-            createProduct('Laptop Adapter Acer Small Pin', 'Computer Accessories', 20.00, './img/Computer Accessories/Laptop Adapter Acer Small Pin.png', 'AC adapter for Acer laptops (small pin)'),
-            createProduct('Converter HDMI to VGA HD-551', 'Computer Accessories', 10.00, './img/Computer Accessories/Converter HDMI to VGA HD-551.png', 'HDMI to VGA converter - HD-551'),
-            createProduct('Parallel Cable XF-0184', 'Computer Accessories', 10.00, './img/Computer Accessories/Parallel Cable XF-0184.png', 'Parallel printer or device cable - XF-0184'),
-            createProduct('Mouse LA-52', 'Computer Accessories', 10.00, './img/Computer Accessories/Mouse LA-52.png', 'Standard optical mouse - model LA-52'),
-            createProduct('Keyboard Zerodate LD-B01', 'Computer Accessories', 15.00, './img/Computer Accessories/Keyboard Zerodate LD-B01.png', 'Zerodate wired keyboard - LD-B01'),
-            createProduct('Converter HDMI to AV', 'Computer Accessories', 10.00, './img/Computer Accessories/Converter HDMI to AV.png', 'Convert HDMI signal to AV (composite video)'),
-            createProduct('Cable HDMI to HDMI Mini', 'Computer Accessories', 5.00, './img/Computer Accessories/Cable HDMI to HDMI Mini.png', 'HDMI to Mini HDMI cable for portable devices'),
-            createProduct('Type C to DP Female SE-LT24', 'Computer Accessories', 15.00, './img/Computer Accessories/Type C to DP Female SE-LT24.png', 'Type-C to DisplayPort (female) converter'),
-            createProduct('Web Camera Super HD 720P', 'Computer Accessories', 0.00, './img/Computer Accessories/Web Camera Super HD 720P.png', 'HD 720p webcam for video conferencing'),
-            createProduct('Converter VGA to AV', 'Computer Accessories', 10.00, './img/Computer Accessories/Converter VGA to AV.png', 'Convert VGA signal to AV video'),
-            createProduct('Adapter HP Yellow Tip', 'Computer Accessories', 20.00, './img/Computer Accessories/Adapter HP Yellow Tip.png', 'HP power adapter with yellow tip connector'),
-            createProduct('Adapter Lenovo C Type', 'Computer Accessories', 35.00, './img/Computer Accessories/Adapter Lenovo C Type.png', 'Lenovo USB-C charging adapter'),
-            createProduct('Cable LAN 5M', 'Computer Accessories', 0.00, './img/Computer Accessories/Cable LAN 5M.png', '5 meter LAN (Ethernet) cable'),
-            createProduct('Adapter C to HDMI FM SE-LT25', 'Computer Accessories', 0.00, './img/Computer Accessories/Adapter C to HDMI FM SE-LT25.png', 'USB-C to HDMI (female) adapter - SE-LT25'),
-            createProduct('Cable USB Printer 5M', 'Computer Accessories', 0.00, './img/Computer Accessories/Cable USB Printer 5M.png', 'USB printer cable - 5 meter length'),
-            createProduct('Converter AV to VGA', 'Computer Accessories', 10.00, './img/Computer Accessories/Converter AV to VGA.png', 'AV to VGA signal converter'),
-            createProduct('Mouse Wireless Aerbes AB-D333', 'Computer Accessories', 12.00, './img/Computer Accessories/Mouse Wireless Aerbes AB-D333.png', 'Ergonomic wireless mouse by Aerbes'),
-            createProduct('Adapter Universal', 'Computer Accessories', 0.00, './img/Computer Accessories/Adapter Universal.png', 'Multi-tip universal power adapter'),
-            createProduct('Adapter USB to HDMI SE-L130', 'Computer Accessories', 10.00, './img/Computer Accessories/Adapter USB to HDMI SE-L130.png', 'USB to HDMI converter - model SE-L130'),
-            createProduct('Gas Air Duster', 'Computer Accessories', 0.00, './img/Computer Accessories/Gas Air Duster.png', 'Compressed air can for electronics cleaning'),
-            createProduct('Data Cable Sony Super SE-C07', 'Computer Accessories', 0.00, './img/Computer Accessories/Data Cable Sony Super SE-C07.png', 'Sony data transfer cable - SE-C07'),
-            createProduct('Power Cable Desktop Round', 'Computer Accessories', 6.00, './img/Computer Accessories/Power Cable Desktop Round.png', 'Standard round desktop power cable'),
-            createProduct('Type C/USB HUB 3.0 Transmission', 'Computer Accessories', 10.00, './img/Computer Accessories/Type C-USB HUB 3.0 Transmission.png', 'USB 3.0 HUB with Type-C input'),
-            createProduct('USB Adapter Bluetooth Kevin', 'Computer Accessories', 0.00, './img/Computer Accessories/USB Adapter Bluetooth Kevin.png', 'Bluetooth USB dongle - Kevin series'),
-            createProduct('USB to VGA Adapter', 'Computer Accessories', 15.00, './img/Computer Accessories/USB to VGA Adapter.png', 'Convert USB to VGA for display output'),
-            createProduct('Hub Aerbes 7 Port AB-C228', 'Computer Accessories', 10.00, './img/Computer Accessories/Hub Aerbes 7 Port AB-C228.png', '7-port USB hub by Aerbes'),
-            createProduct('USB Adapter WIFI', 'Computer Accessories', 0.00, './img/Computer Accessories/USB Adapter WIFI.png', 'Wireless USB WiFi adapter'),
-            createProduct('Laptop Stand Ananas AS-50477', 'Computer Accessories', 0.00, './img/Computer Accessories/Laptop Stand Ananas AS-50477.png', 'Adjustable laptop stand - model AS-50477')
+            // Laptops & Computers products
+            createProduct('Laptop Lenovo Thinkpad E14 i5', 'Laptops & Computers', 350.00, './img/Laptops & Computers/Laptop Lenovo Thinkpad E14 i5.png', 'Lenovo Thinkpad E14 with Intel Core i5 processor'),
+            createProduct('Laptop HP EliteBook MT43 i5', 'Laptops & Computers', 290.00, './img/Laptops & Computers/Laptop HP EliteBook MT43 i5.png', 'HP EliteBook MT43 featuring Intel Core i5'),
+            createProduct('Laptop HP EliteBook Folio', 'Laptops & Computers', 280.00, './img/Laptops & Computers/Laptop HP EliteBook Folio.png', 'Sleek and powerful HP EliteBook Folio'),
+            createProduct('Laptop Dell Latitude E5450 i5', 'Laptops & Computers', 280.00, './img/Laptops & Computers/Laptop Dell Latitude E5450 i5.png', 'Dell Latitude E5450 with i5 processor'),
+            createProduct('Laptop Dell Latitude 7280 i5', 'Laptops & Computers', 350.00, './img/Laptops & Computers/Laptop Dell Latitude 7280 i5.png', 'Compact and efficient Dell Latitude 7280 i5'),
+            createProduct('Laptop Lenovo Thinkpad T460 i5', 'Laptops & Computers', 260.00, './img/Laptops & Computers/Laptop Lenovo Thinkpad T460 i5.png', 'Business-ready Lenovo Thinkpad T460 with i5'),
+            createProduct('Lenovo ThinkPad E14 Gen 5 (Intel i5)', 'Laptops & Computers', 987.99, './img/Laptops & Computers/Lenovo ThinkPad E14 Gen 5 (Intel i5).png', '13th Gen Intel Core i5, 14″ FHD IPS, Iris Xe graphics – durable business laptop'),
+
+            createProduct('Lenovo ThinkPad E14 Gen 2 (Intel i5-1135G7)', 'Laptops & Computers', 429.11, './img/Laptops & Computers/Lenovo ThinkPad E14 Gen 2 (Intel i5-1135G7).png', 'Intel Core i5-1135G7, Iris Xe graphics, 14″ display'),
+
+            createProduct('HP EliteBook Folio (i5)', 'Laptops & Computers', 129.99, './img/Laptops & Computers/HP EliteBook Folio (i5).png', 'HP EliteBook Folio 9470M with Intel i5, 14″ screen'),
+
+            createProduct('Dell Latitude E5450 (i5)', 'Laptops & Computers', 125.00, './img/Laptops & Computers/Dell Latitude E5450 (i5).png', '14″ Dell Latitude E5450, Intel Core i5'),
+
+            createProduct('Dell Latitude 7280 (i5)', 'Laptops & Computers', 305.08, './img/Laptops & Computers/Dell Latitude 7280 (i5).png', '12.5″ Dell Latitude 7280, Intel Core i5'),
+
+            createProduct('Lenovo ThinkPad T460 (i5)', 'Laptops & Computers', 169.99, './img/Laptops & Computers/Lenovo ThinkPad T460 (i5).png', 'Lenovo ThinkPad T460, Intel i5, 14″ business laptop'),
+
+            createProduct('Dell OptiPlex Small Form Factor', 'Desktops & Computers', 879.00, './img/Laptops & Computers/Dell OptiPlex Small Form Factor.png', 'Dell OptiPlex SFF desktop with Intel Core CPU'),
+
+            createProduct('Dell OptiPlex Micro Plus 7020', 'Desktops & Computers', 749.99, './img/Laptops & Computers/Dell OptiPlex Micro Plus 7020.png', 'Dell OptiPlex 7020 Mini Desktop – compact high‑performance'),
+
+            createProduct('Dell Vostro 3470 Small Desktop', 'Desktops & Computers', 754.95, './img/Laptops & Computers/Dell Vostro 3470 Small Desktop.png', 'Dell Vostro 3470 SFF with i5‑8400, 8 GB RAM')
+
         ];
 
 
