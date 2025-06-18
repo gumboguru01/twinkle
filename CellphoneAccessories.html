@@ -190,12 +190,96 @@
         const products = [
 
 
-            createProduct('CARTRIDGE HP 80A', 'Stationery', 20.00, './img/Stationery/CARTRIDGE HP 80A.png', 'HP 80A Black Original LaserJet Toner Cartridge (CF280A), page yield ~2700 pages, for HP LaserJet Pro 400 series.'),
-            createProduct('CARTRIDGE HP 83A', 'Stationery', 25.00, './img/Stationery/CARTRIDGE HP 83A.png', 'HP 83A Black Toner Cartridge (CF283A), yields ~1500 pages, compatible with HP LaserJet Pro M201/M125/M127 series.'),
-            createProduct('STOP WATCH', 'Stationery', 0.00, './img/Stationery/STOP WATCH.png', 'Digital stopwatch with lap time, countdown timer, alarm function, suitable for sports, school, and training.'),
-            createProduct('CARTRIDGE 17A BROWN BOX', 'Stationery', 0.00, './img/Stationery/CARTRIDGE 17A BROWN BOX.png', 'HP 17A Black LaserJet Toner Cartridge (CF217A), yields ~1600 pages, compatible with HP LaserJet Pro M102, M130. Comes in eco-friendly brown box.')
+            // Pouches
+            createProduct("POUCH SILICONE Y6 2018", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/POUCH SILICONE Y6 2018.png", "Silicone pouch for Huawei Y6 2018."),
+            createProduct("POUCH RING S24", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/POUCH RING S24.png", "Case with ring holder for Galaxy S24."),
+            createProduct("POUCH SILICONE A32 5G", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/POUCH SILICONE A32 5G.png", "Soft silicone pouch providing shock protection and grip."),
+            createProduct("POUCH SILICONE A34", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/POUCH SILICONE A34.png", "Smooth and flexible silicone pouch for A34."),
+            createProduct("POUCH FASHION A14", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/POUCH FASHION A14.png", "Stylish fashion case for A14 with slim fit."),
+            createProduct("POUCH SILICONE IPH 14", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/POUCH SILICONE IPH 14.png", "Shockproof silicone pouch for iPhone 14."),
+            createProduct("POUCH SILICONE IPH X MAX", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/POUCH SILICONE IPH X MAX.png", "Durable and slim silicone pouch for iPhone X Max."),
+            createProduct('POUCH SILICONE A32 5G', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/POUCH SILICONE A32 5G.png', 'Soft silicone protective pouch for Samsung A32 5G, offers shock absorption and anti-slip grip.'),
+            createProduct('POUCH SILICONE A34', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/POUCH SILICONE A34.png', 'Durable silicone pouch for Samsung A34, provides scratch resistance and comfortable handling.'),
+            createProduct('POUCH FASHION A14', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/POUCH FASHION A14.png', 'Stylish fashion pouch for Samsung A14, combines protection with elegant design.'),
+            createProduct('POUCH SILICONE IPH 14', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/POUCH SILICONE IPH 14.png', 'Slim-fit silicone pouch for iPhone 14, offers full body protection with precise cutouts.'),
+            createProduct('POUCH SILICONE IPH X MAX', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/POUCH SILICONE IPH X MAX.png', 'Flexible and lightweight silicone pouch designed for iPhone X Max, provides anti-slip protection.'),
+            createProduct('POUCH SILICONE Y6 2018', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/POUCH SILICONE Y6 2018.png', 'Custom-fit silicone pouch for Huawei Y6 2018, ensures protection from scratches and minor drops.'),
+            createProduct('POUCH RING S24', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/POUCH RING S24.png', 'Protective pouch with built-in ring stand for Samsung S24, great for grip and viewing angles.'),
+
+            // Chargers
+            createProduct('CHARGER DENMEN DCO1T', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/CHARGER DENMEN DCO1T.png', 'Fast charging wall adapter with universal compatibility and overload protection.'),
+            createProduct('CHARGER TREQA 120W CH-646', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/CHARGER TREQA 120W CH-646.png', 'High-speed 120W charger with multiple USB outputs, ideal for laptops and smartphones.'),
+            createProduct('CHARGER AERBES IPHONE AB-S630i', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/CHARGER AERBES IPHONE AB-S630i.png', 'iPhone-compatible fast charger with durable build and safety features.'),
+
+            // Cables
+            createProduct("CABLE TREQA IOS CA-8822", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/CABLE TREQA IOS CA-8822.png", "High-speed lightning cable by Treqa for iOS."),
+            createProduct("CABLE TREQA MICRO CA-8761", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/CABLE TREQA MICRO CA-8761.png", "Micro USB cable for Android and accessories."),
+            createProduct("CABLE C TYPE AERBES AB-SJ38T", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/CABLE C TYPE AERBES AB-SJ38T.png", "Type-C USB cable with fast charge support."),
+            createProduct("CABLE C TO C TREQA CA-8835", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/CABLE C TO C TREQA CA-8835.png", "USB-C to USB-C charging cable."),
+            createProduct('CABLE AERBES CLASSIC 3M AB-5024', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/CABLE AERBES CLASSIC 3M AB-5024.png', '3-meter long classic USB cable by Aerbes, supports fast charging and data transfer.'),
+            createProduct('CABLE TREQA IOS CA-8822', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/CABLE TREQA IOS CA-8822.png', 'Durable lightning cable for iOS devices, supports fast charging and syncing.'),
+            createProduct('CABLE TREQA MICRO CA-8761', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/CABLE TREQA MICRO CA-8761.png', 'Micro USB cable for Android and accessories, supports fast charge and stable data transfer.'),
+            createProduct('CABLE C TYPE AERBES AB-SJ38T', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/CABLE C TYPE AERBES AB-SJ38T.png', 'Type-C fast charging cable compatible with most Android devices and tablets.'),
+            createProduct('CABLE C TO C TREQA CA-8835', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/CABLE C TO C TREQA CA-8835.png', 'USB-C to USB-C cable ideal for MacBooks, tablets, and fast-charging phones.'),
+            createProduct("CABLE AERBES CLASSIC 3M AB-5024", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/CABLE AERBES CLASSIC 3M AB-5024.png", "High-quality cable for fast charging and data transfer."),
+
+            // Wall Heads
+            createProduct('WALL HEAD AERBES AB-S627', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/WALL HEAD AERBES AB-S627.png', 'Single-port wall charger with fast charging and overcharge protection.'),
+            createProduct('WALL HEAD AERBES AB-SJ27', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/WALL HEAD AERBES AB-SJ27.png', 'Compact wall adapter for efficient power delivery and universal voltage support.'),
+            // === Wall Heads / Chargers ===
+            createProduct("WALL HEAD AERBES AB-SJ27", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/WALL HEAD AERBES AB-SJ27.png", "Compact dual-port wall charger from Aerbes."),
+            createProduct("WALL HEAD AERBES AB-S627", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/WALL HEAD AERBES AB-S627.png", "Durable wall charger compatible with multiple USB cables."),
+            createProduct("CHARGER DENMEN DCO1T", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/CHARGER DENMEN DCO1T.png", "Fast charging USB wall charger with reliable output."),
+            createProduct("CHARGER TREQA 120W CH-646", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/CHARGER TREQA 120W CH-646.png", "120W charger for laptops and phones."),
+            createProduct("CHARGER AERBES IPHONE AB-S630i", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/CHARGER AERBES IPHONE AB-S630i.png", "Aerbes charger optimized for iPhones."),
 
 
+
+            // === Tempered Glass - Standard ===
+            createProduct("TEMPERED GLASS 5D IPH 11 MAX", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D IPH 11 MAX.png", "Full coverage 5D tempered glass for iPhone 11 Max."),
+            createProduct("TEMPERED GLASS 5D IPH 12", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D IPH 12.png", "Premium edge-to-edge 5D glass for iPhone 12."),
+            createProduct("TEMPERED GLASS 5D A30", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D A30.png", "Full screen tempered glass protector for A30."),
+            createProduct("TEMPERED GLASS EX NOTE 10 PLUS", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS EX NOTE 10 PLUS.png", "Full screen glass for Galaxy Note 10 Plus."),
+
+            // === Tempered Glass - Privacy ===
+            createProduct("TEMPERED GLASS PRIVACY IPH 7 BL", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS PRIVACY IPH 7 BL.png", "Privacy screen glass for iPhone 7, blocks side views."),
+            createProduct("TEMPERED GLASS PRIVACY P40 LITE", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS PRIVACY P40 LITE.png", "Anti-spy tempered glass for Huawei P40 Lite."),
+
+            // === Watch Accessories ===
+            createProduct('WATCH SILICONE BAND SPIGEN SP04', 'Cellphone Accessories', 0.00, './img/Cellphone Accessories/WATCH SILICONE BAND SPIGEN SP04.png', 'Premium silicone band by Spigen, compatible with most smartwatches, sweat-proof and adjustable.'),
+            createProduct("WATCH SILICONE BAND SPIGEN SP04", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/WATCH SILICONE BAND SPIGEN SP04.png", "Comfortable and durable silicone band for smartwatches."),
+
+            // === Rings & Stands ===
+            createProduct("PHONE RING STICKER STENT", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/PHONE RING STICKER STENT.png", "Phone ring holder with rotation and kickstand."),
+
+            // === Tempered Glass - Standard (5D, EX) ===
+            createProduct("TEMPERED GLASS 5D P30", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D P30.png", "High-quality tempered glass for Huawei P30 with edge-to-edge protection."),
+            createProduct("TEMPERED GLASS 5D Y73", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D Y73.png", "5D full-cover tempered glass for Vivo Y73."),
+            createProduct("TEMPERED GLASS EX IPH 14 MAX", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS EX IPH 14 MAX.png", "Edge-to-edge tempered glass for iPhone 14 Max."),
+            createProduct("TEMPERED GLASS 5D IPH 15/15 PRO", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D IPH 15/15 PRO.png", "5D glass screen protector for iPhone 15/15 Pro."),
+            createProduct("TEMPERED GLASS 5D A31", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D A31.png", "5D screen protector for Galaxy A31."),
+            createProduct("TEMPERED GLASS 5D Y6 2018", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D Y6 2018.png", "Full cover screen glass for Huawei Y6 2018."),
+            createProduct("TEMPERED GLASS 5D IPH 15", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D IPH 15.png", "Premium tempered glass for iPhone 15."),
+            createProduct("TEMPERED GLASS 5D HONOR X7", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D HONOR X7.png", "Tempered screen protector for Honor X7."),
+            createProduct("TEMPERED GLASS 5D Y5 P 2020", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D Y5 P 2020.png", "Screen protector for Y5P 2020."),
+            createProduct("TEMPERED GLASS 5D Y7 2018", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D Y7 2018.png", "Tempered glass for Huawei Y7 2018."),
+            createProduct("TEMPERED GLASS 5D P SMART 2019", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS 5D P SMART 2019.png", "Full screen glass protector for P Smart 2019."),
+
+            // === Tempered Glass - Ceramic ===
+            createProduct("TEMPERED GLASS CERAMIC A73", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS CERAMIC A73.png", "Ceramic anti-shatter screen protector for Samsung A73."),
+            createProduct("TEMPERED GLASS CERAMIC S23 ULTR", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS CERAMIC S23 ULTR.png", "Ceramic screen protector for Samsung Galaxy S23 Ultra."),
+            createProduct("TEMPERED GLASS CERAMIC A52", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS CERAMIC A52.png", "Durable ceramic tempered glass for Galaxy A52."),
+            createProduct("TEMPERED GLASS CERAMIC IPH X", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS CERAMIC IPH X.png", "Ceramic screen glass for iPhone X."),
+            createProduct("TEMPERED GLASS CERAMIC IPH 6 WH", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS CERAMIC IPH 6 WH.png", "Ceramic tempered glass for iPhone 6 White."),
+            createProduct("TEMPERED GLASS CERAMIC A05S", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS CERAMIC A05S.png", "Anti-scratch glass for Samsung A05s."),
+
+            // === Tempered Glass - Privacy ===
+            createProduct("TEMPERED GLASS PRIVACY A10", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS PRIVACY A10.png", "Privacy tempered glass for Galaxy A10."),
+            createProduct("TEMPERED GLASS PRVCY IPH 15 PLU", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS PRVCY IPH 15 PLU.png", "Anti-spy screen protector for iPhone 15 Plus."),
+            createProduct("TEMPERED GLASS PRIVACY IPH 7/8", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS PRIVACY IPH 7/8.png", "Privacy glass for iPhone 7 and iPhone 8."),
+            createProduct("TEMPERED GLASS PRIVACY IPH 6 PL", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS PRIVACY IPH 6 PL.png", "Privacy tempered glass for iPhone 6 Plus."),
+            createProduct("TEMPERED PRIVACY EX S23", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED PRIVACY EX S23.png", "Privacy tempered glass for Galaxy S23."),
+            createProduct("TEMPERED GLASS PRVCY X MAX/11", "Cellphone Accessories", 0.00, "./img/Cellphone Accessories/TEMPERED GLASS PRVCY X MAX/11.png", "Anti-peep tempered glass for iPhone X Max or 11."),
 
 
         ];
