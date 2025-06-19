@@ -187,9 +187,10 @@
                 </div>
                 <div class="modal-body d-flex align-items-center justify-content-center">
                     <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3"
-                            placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                        <input type="text" id="searchInput" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Search site...">
+                        <button class="btn btn-primary px-4" id="searchBtn"><i class="bi bi-search"></i></button>
+
                     </div>
                 </div>
             </div>
@@ -998,6 +999,54 @@
         </div>
     </div>
     <!-- Footer End -->
+    <!-- searchbar sart  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById('searchInput');
+            const searchBtn = document.getElementById('searchBtn');
+
+            searchBtn.addEventListener('click', function () {
+                const query = searchInput.value.toLowerCase().trim();
+
+                if (query.length === 0) return;
+
+                // You can expand this list of keywords and matching links
+                const pages = [
+                    { keyword: "laptop", url: "Computers&Laptops.html" },
+                    { keyword: "computer", url: "Computers&Laptops.html" },
+                    { keyword: "accessories", url: "CellphoneAccessories.html" },
+                    { keyword: "storage", url: "storage.html" },
+                    { keyword: "network", url: "Networking.html" },
+                    { keyword: "sound", url: "Sound.html" },
+                    { keyword: "stationery", url: "Stationery.html" },
+                    { keyword: "electrical", url: "Electricals.html" },
+                    { keyword: "blog", url: "blog.html" },
+                    { keyword: "about", url: "about.html" },
+                    { keyword: "contact", url: "contact.html" },
+                    { keyword: "service", url: "service.html" },
+                    { keyword: "store", url: "store.html" }
+                ];
+
+                const result = pages.find(p => query.includes(p.keyword));
+
+                if (result) {
+                    window.location.href = result.url;
+                } else {
+                    alert('No matching page found. Please try another keyword.');
+                }
+            });
+        });
+        searchInput.addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                searchBtn.click();
+            }
+        });
+
+    </script>
+
+    <!-- search bottiooon done  -->
+
 
 
     <!-- Back to Top -->
